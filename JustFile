@@ -38,7 +38,7 @@ ray_serve:
   sleep 20  # to ensure ray stop completes before new start  
   nohup bash -c 'uv run ray start --head' &  
   sleep 20  # to ensure ray starts before launching the server  
-  uv run serve run backend/model_server/ray_config.yaml
+
 
 ray_serve_win:
   Start-Job { uv run ray stop }
